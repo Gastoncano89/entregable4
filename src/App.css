@@ -1,0 +1,226 @@
+.App {
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* background: url('background.jpg') no-repeat; */
+}
+
+input, button {
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none; /*contorno*/
+    font-size: 1em;
+    border: 1px solid #fff;
+    font-weight: 600;
+}
+
+.app__navbar {
+    background-color: transparent;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.app__navbar > button {
+    margin-right: 1rem;
+}
+
+.app__form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+}
+.app__UsersCotainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    min-height: calc(100vh - 10rem)
+}
+.app__userCard {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #292727;
+    color: #fff;
+    width: calc(25% - 3rem);
+    height: max-content;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+@media (max-width: 1000px) {
+    .app__userCard {
+        width: calc(50% - 3rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .app__userCard {
+        width: 100%;
+    }
+}
+
+.app__userDataList > li {
+    margin-bottom: .5rem;
+}
+
+.app__userDataList > li > span {
+    margin-right: .5rem;
+}
+
+.btn-create {
+     outline:none;
+     border-radius: 6px;
+     font-size: 1.1em;
+     color: #fff;
+     font-weight: 500; /*el grosor de la letra "es como negrita"*/
+     margin-left: 40px;
+     transition: .5s;
+     height: 45px;
+     background: #162938;
+     border: none;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+}
+
+.btn-create:hover{
+    background: #fff;
+    color:#162938;
+}
+
+.btn-success {
+    background: transparent;
+    border: 2px solid #fff;
+    outline:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500; /*el grosor de la letra "es como negrita"*/
+    transition: .5s;
+}
+.btn-success:hover{
+    background: #fff;
+    color:#162938;
+}
+
+.btn-danger {
+    background: transparent;
+    border: 2px solid #fff;
+    outline:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1.1em;
+    font-weight: 500; /*el grosor de la letra "es como negrita"*/
+    transition: .5s;
+    background-color:transparent;
+    color: #fff;
+}
+
+.btn-danger:hover{
+    background: #fff;
+    background-color: #a51212;
+}
+
+.app__CardBtnContaier {
+    display: flex;
+    gap: .5rem;
+    justify-content: end;
+}
+
+.Modal__active {
+    display: flex !important;
+}
+
+.app__formContainer {
+    /* position:relative; */
+    width: 400px;
+    height: 440px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter:blur(20px); /*Aplica el desenfoque*/
+    box-shadow:0 0 30px rgba(0,255,255, .5); /*efectos de sombra*/
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+    /* background-color: #292727; */
+    height: max-content;
+    /* display: flex; */
+    flex-direction: column;
+    color: #fff;
+}
+
+.icon-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.app_formTitle {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.app_formTitle > i {
+    cursor: pointer;
+    font-size: 2rem;
+}
+.app__formItems{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.app__formField {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app__formField > input {
+    width: 90%;
+}
+
+.app__formFieldCouple {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.app__formFieldCouple > input {
+    width: calc(50% - 2.6rem);
+}
+
+.app__formField > i, .app__formFieldCouple > i {
+    width: 10%;
+}
+
+
+
